@@ -15,4 +15,4 @@
 <br>**3.RSA解密原理**
 >>
 >><br>其是依靠欧拉公式：
->>&emsp;&emsp;m^φ(n) ≡ 1 (mod n)
+>><br>&emsp;&emsp;m^φ(n) ≡ 1 (mod n)
