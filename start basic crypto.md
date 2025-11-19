@@ -26,6 +26,21 @@
 
 **2.共享素数攻击**
 ><br>通过gcd（n1,n2) = 共享素数p
->><br>q1 = n1 // p&emsp;&rArr;\phi(n1) = (p-1)(q1-1)&emsp;&rArr;d1=e^(-1)mod\phi(n1)
->><br>q2 = n2 // p&emsp;&rArr;\phi(n2) = (p-1)(q2-1)&emsp;&rArr;d2=e^(-1)mod\phi(n2)
+>><br>q1 = n1 // p&emsp;&rArr;φ (n1) = (p-1)(q1-1)&emsp;&rArr;d1=e^(-1)mod/φ(n1)
+>><br>q2 = n2 // p&emsp;&rArr;φ (n2) = (p-1)(q2-1)&emsp;&rArr;d2=e^(-1)mod/φ(n2)
 >><br>m1 = c^(d1)mod n1
+<br>
+<br>
+
+**3.中国剩余定理**
+><br>$$
+\begin{cases}
+x \equiv a_{1} \pmod{m_{1}} \\
+x \equiv a_{2} \pmod{m_{2}} \\
+\vdots \\
+x \equiv a_{k} \pmod{m_{k}}
+\end{cases}
+$$
+>>模M = m<sub>1</sub> * m<sub>2</sub> * m<sub>3</sub> * …… * m<sub>k</sub>
+>><br>Mi = M /mi&emsp;&emsp;&emsp;逆元x = pow（M<sub>i</sub>,-1,m<sub>i</sub>)
+>><br>x ≡ (a<sub>1</sub> * M<sub>1</sub> * x<sub>1</sub> + a<sub>2</sub> * M<sub>2</sub> * x<sub>2</sub>+……+a<sub>k</sub> * M<sub>k</sub> * x<sub>k</sub>)mod(M)
