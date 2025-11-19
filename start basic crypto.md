@@ -16,3 +16,4 @@
 >>
 >><br>其是依靠欧拉公式：
 >><br>&emsp;&emsp;m^φ(n) ≡ 1 (mod n)
+>><br>其后续可以变为：$m^{k \times \varphi(n) + 1} \equiv m$ (mod $n$)
