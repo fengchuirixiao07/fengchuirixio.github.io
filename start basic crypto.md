@@ -16,7 +16,9 @@
 >><br>选择两个大质数 p和 q，并计算模数 n和欧拉函数 φ(n)。
 >><br>n = p × q
 >><br>ψ(n) = (p-1) × (q-1)&emsp;&emsp;m^e ≡ C (mod n)&emsp;&emsp;c^d ≡ m (mod n)
+>><br>m^(e×d) ≡ m (mod n)
 >><br>其是依靠欧拉公式：
 >><br>&emsp;&emsp;m^φ(n) ≡ 1 (mod n)
 >><br>其后续可以变为：
 <br>&emsp;&emsp;m^(k × φ(n) + 1) ≡ m (mod n)
+>><br>e×d = k×ψ(n)+1 ⇒ e×d ≡ 1 (mod ψ(n))
