@@ -154,18 +154,19 @@ print(long_to_bytes(m))
 **7.线性同余生成器（lcg）**
 ><br>递推公式：X <sub>n+1</sub>=(a×X <sub>n</sub>+b)modm
 ><br>参数说明：X <sub>n</sub>：当前状态（种子） &emsp;&emsp;a：乘数 &emsp;&emsp;b：增量 &emsp;&emsp;m：模数
+
 >><br>求初始Seed：
->>><br> x<sub>n</sub>≡(x<sub>n+1</sub> - b) * a^(-1) mod(m)
+<br> x<sub>n</sub>≡(x<sub>n+1</sub> - b) * a^(-1) mod(m)
 >><br>求a：
->>><br>x<sub>n+1</sub>=(a * x<sub>n</sub> +  b)mod(m)
->>><br>x<sub>n</sub>=(a * x<sub>n-1</sub> +  b)mod(m)
->>><br>>x<sub>n+1</sub> - x<sub>n</sub> = (a * (x<sub>n</sub> - x<sub>n-1</sub> ))mod(m)
->>><br>a ≡ (x<sub>n+1</sub> - x<sub>n</sub>) * (x<sub>n</sub> - x<sub>n-1</sub> )^(-1) mod (m)
+><br>x<sub>n+1</sub>=(a * x<sub>n</sub> +  b)mod(m)
+><br>x<sub>n</sub>=(a * x<sub>n-1</sub> +  b)mod(m)
+><br>>x<sub>n+1</sub> - x<sub>n</sub> = (a * (x<sub>n</sub> - x<sub>n-1</sub> ))mod(m)
+><br>a ≡ (x<sub>n+1</sub> - x<sub>n</sub>) * (x<sub>n</sub> - x<sub>n-1</sub> )^(-1) mod (m)
 >><br>求b：
->>><br>b ≡ (x<sub>n+1</sub> - a * x<sub>n</sub>) mod(m)
+><br>b ≡ (x<sub>n+1</sub> - a * x<sub>n</sub>) mod(m)
 >><br>求m：
->>><br>t<sub>n</sub> = x<sub>n+1</sub> - x<sub>n</sub>
->>><br>=[(a*x<sub>n</sub>+b)-(a*x<sub>n-1</sub>+b)+b)]mod(m)
->>><br>=a*t<sub>n-1</sub>+b)+b)mod(m)
->>><br>t<sub>n+1</sub>*t<sub>n-1</sub>=a*t<sub>n</sub>*t<sub>n-1</sub>=(t<sub>n</sub>)^(2)
->>
+><br>t<sub>n</sub> = x<sub>n+1</sub> - x<sub>n</sub>
+><br>=[(a*x<sub>n</sub>+b)-(a*x<sub>n-1</sub>+b)+b)]mod(m)
+><br>=a*t<sub>n-1</sub>+b)+b)mod(m)
+><br>t<sub>n+1</sub>*t<sub>n-1</sub>=a*t<sub>n</sub>*t<sub>n-1</sub>=(t<sub>n</sub>)^(2)
+
